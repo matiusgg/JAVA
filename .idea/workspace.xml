@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c443dfb9-89e4-4fa8-bc61-efd8312b2339" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Consensionaria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8285#8286#0" expanded="true" />
+                <element signature="e#8310#8311#0" expanded="true" />
+                <element signature="e#8343#8344#0" expanded="true" />
+                <element signature="e#8371#8372#0" expanded="true" />
+                <element signature="e#8404#8405#0" expanded="true" />
+                <element signature="e#8433#8434#0" expanded="true" />
+                <element signature="e#8477#8478#0" expanded="true" />
+                <element signature="e#8513#8514#0" expanded="true" />
+                <element signature="e#8545#8546#0" expanded="true" />
+                <element signature="e#8573#8574#0" expanded="true" />
+                <element signature="e#8615#8616#0" expanded="true" />
+                <element signature="e#8649#8650#0" expanded="true" />
+                <element signature="e#8681#8682#0" expanded="true" />
+                <element signature="e#8709#8710#0" expanded="true" />
+                <element signature="e#8751#8752#0" expanded="true" />
+                <element signature="e#8785#8786#0" expanded="true" />
+                <element signature="e#8818#8819#0" expanded="true" />
+                <element signature="e#8847#8848#0" expanded="true" />
+                <element signature="e#8891#8892#0" expanded="true" />
+                <element signature="e#8927#8928#0" expanded="true" />
+                <element signature="e#8972#8973#0" expanded="true" />
+                <element signature="e#9009#9010#0" expanded="true" />
+                <element signature="e#9073#9074#0" expanded="true" />
+                <element signature="e#9127#9128#0" expanded="true" />
+                <element signature="e#10058#10066#0" expanded="true" />
+                <element signature="e#10319#10320#0" expanded="true" />
+                <element signature="e#10347#10348#0" expanded="true" />
+                <element signature="e#10708#10709#0" expanded="true" />
+                <element signature="e#10742#10743#0" expanded="true" />
+                <element signature="e#10796#10797#0" expanded="true" />
+                <element signature="e#10842#10843#0" expanded="true" />
+                <element signature="e#10877#10878#0" expanded="true" />
+                <element signature="e#10908#10909#0" expanded="true" />
+                <element signature="e#11596#11597#0" expanded="true" />
+                <element signature="e#11633#11634#0" expanded="true" />
+                <element signature="e#11693#11694#0" expanded="true" />
+                <element signature="e#11745#11746#0" expanded="true" />
+                <element signature="e#11779#11780#0" expanded="true" />
+                <element signature="e#11809#11810#0" expanded="true" />
+                <element signature="e#13237#13238#0" expanded="true" />
+                <element signature="e#13345#13346#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ObjetoConcensionaria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Coches.java" />
+        <option value="$PROJECT_DIR$/src/ObjetoConcensionaria.java" />
+        <option value="$PROJECT_DIR$/src/Consensionaria.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="26" />
+    <option name="y" value="32" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ConsencionariaCoches" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsencionariaCoches" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/nivel programacion codigo fuente/nivel programacion codigo fuente" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ObjetoConcensionaria" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ObjetoConcensionaria" />
+      <module name="ConsencionariaCoches" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ObjetoConcensionaria" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c443dfb9-89e4-4fa8-bc61-efd8312b2339" name="Default Changelist" comment="" />
+      <created>1567756486480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567756486480</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14910026" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49093446" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32914925" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32914925" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ObjetoConcensionaria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Consensionaria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8285#8286#0" expanded="true" />
+            <element signature="e#8310#8311#0" expanded="true" />
+            <element signature="e#8343#8344#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8404#8405#0" expanded="true" />
+            <element signature="e#8433#8434#0" expanded="true" />
+            <element signature="e#8477#8478#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8545#8546#0" expanded="true" />
+            <element signature="e#8573#8574#0" expanded="true" />
+            <element signature="e#8615#8616#0" expanded="true" />
+            <element signature="e#8649#8650#0" expanded="true" />
+            <element signature="e#8681#8682#0" expanded="true" />
+            <element signature="e#8709#8710#0" expanded="true" />
+            <element signature="e#8751#8752#0" expanded="true" />
+            <element signature="e#8785#8786#0" expanded="true" />
+            <element signature="e#8818#8819#0" expanded="true" />
+            <element signature="e#8847#8848#0" expanded="true" />
+            <element signature="e#8891#8892#0" expanded="true" />
+            <element signature="e#8927#8928#0" expanded="true" />
+            <element signature="e#8972#8973#0" expanded="true" />
+            <element signature="e#9009#9010#0" expanded="true" />
+            <element signature="e#9073#9074#0" expanded="true" />
+            <element signature="e#9127#9128#0" expanded="true" />
+            <element signature="e#10058#10066#0" expanded="true" />
+            <element signature="e#10319#10320#0" expanded="true" />
+            <element signature="e#10347#10348#0" expanded="true" />
+            <element signature="e#10708#10709#0" expanded="true" />
+            <element signature="e#10742#10743#0" expanded="true" />
+            <element signature="e#10796#10797#0" expanded="true" />
+            <element signature="e#10842#10843#0" expanded="true" />
+            <element signature="e#10877#10878#0" expanded="true" />
+            <element signature="e#10908#10909#0" expanded="true" />
+            <element signature="e#11596#11597#0" expanded="true" />
+            <element signature="e#11633#11634#0" expanded="true" />
+            <element signature="e#11693#11694#0" expanded="true" />
+            <element signature="e#11745#11746#0" expanded="true" />
+            <element signature="e#11779#11780#0" expanded="true" />
+            <element signature="e#11809#11810#0" expanded="true" />
+            <element signature="e#13237#13238#0" expanded="true" />
+            <element signature="e#13345#13346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
