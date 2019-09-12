@@ -113,6 +113,8 @@ public class AgendaJava {
 
     }
 
+
+    
     public void buscar(String nombre){
 
         for (int i = 0; i < contactos.size(); i++) {
