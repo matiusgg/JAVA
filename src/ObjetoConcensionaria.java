@@ -24,6 +24,7 @@ public class ObjetoConcensionaria {
 
             // tienda.mostrarCatalogo();
             tienda.escogerPiezas();
+            
 
 
 
