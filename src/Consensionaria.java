@@ -22,6 +22,11 @@ public class Consensionaria {
 
     ArrayList<Coches> listaPiezas = new ArrayList<>();
 
+    // LISTA CON LOS CLIENTES
+
+    ArrayList<Cliente> clientes = new ArrayList<>();
+
+
     Scanner sc = new Scanner(System.in);
 
     private String nombreTienda;
@@ -66,6 +71,78 @@ public class Consensionaria {
        // this.listaPiezas.add(piezasMaseratti);
 
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    private void CreacionCliente(String nombre, int telefono, String email) {
+
+        Cliente nuevoCliente = new Cliente(nombre, telefono, email);
+
+
+        clientes.add(nuevoCliente);
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+private void mostrarClientes(String nombre) {
+
+    for (int i = 0; i < clientes.size(); i++) {
+
+        if (nombre.equals(clientes.get(i).getNombre())) {
+
+            System.out.println("Tus datos fueron registrados con exito y son los siguientes: " + " \n ");
+
+            System.out.println(clientes.get(i).toString());
+        }
+
+    }
+}
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public void registroCliente(){
+
+        System.out.println("Conviertete en nuestro cliente, y obten descuentos");
+
+        System.out.println("\n" + "Ingresa tus datos");
+
+        System.out.println("\n" + "Nombre Completo:");
+
+        String nombre = this.sc.nextLine();
+
+        System.out.println("\n" + "Telefono: ");
+
+        int telefono = Integer.parseInt(this.sc.nextLine());
+
+        System.out.println("\n" + "Email: ");
+
+        String email = this.sc.nextLine();
+
+        System.out.println("\n" + "Registrarse: " + "\n" + "1.Si" + "\n" + "2.No, volver" + "\n");
+
+        int opcionRegistro = Integer.parseInt(this.sc.nextLine());
+
+
+
+        if (opcionRegistro == 1) {
+            this.CreacionCliente(nombre, telefono, email);
+
+            this.mostrarClientes(nombre);
+
+        }
+
+        else {
+
+            System.out.println("No has escogido ninguna opcion");
+        }
+
+
+    }
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void mostrarCatalogo() {
 
@@ -192,7 +269,40 @@ public class Consensionaria {
 
                 else if(opcionPieza == 2) {
 
-                    System.out.println("Exelente, introduzca sus datos para pagar");
+
+
+                    System.out.println("Excelente, el total por este Coche es el siguiente: ");
+
+                    System.out.println(ValoresCoche.toString());
+
+                    this.cambiarPieza(ValoresCoche.getLlantas(), ValoresCoche.getVentanas(), ValoresCoche.getLlantas());
+
+                    /*
+
+                    System.out.println("Exelente, introduzca sus datos para pagar: ");
+
+                    System.out.println("\n" + "Ingresa tus datos");
+
+                    System.out.println("\n" + "Nombre Completo:");
+
+                    String nombre = this.sc.nextLine();
+
+                    System.out.println("\n" + "Telefono: ");
+
+                    int telefono = Integer.parseInt(this.sc.nextLine());
+
+                    System.out.println("\n" + "Email: ");
+
+                    String email = this.sc.nextLine();
+
+                    System.out.println("\n" + "Comprar: " + "\n" + "1.Si" + "\n" + "2.No, volver" + "\n");
+
+                    int opcionComprar = Integer.parseInt(this.sc.nextLine());
+
+
+                     */
+
+                   // if (opcionComprar == 1) {}
                 }
 
         }
@@ -205,6 +315,8 @@ public class Consensionaria {
         }
 
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void catalogoMotor() {
 
@@ -220,6 +332,8 @@ public class Consensionaria {
         }
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public void catalogoVentanas() {
 
         int numero = 0;
@@ -234,6 +348,8 @@ public class Consensionaria {
         }
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public void catalogoLlantas() {
 
         int numero = 0;
@@ -247,6 +363,10 @@ public class Consensionaria {
 
         }
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    // CAMBIAR PIEZAS
 
     private void cambiarPieza(String inputMotor, String inputVentanas, String inputLlantas) {
 
@@ -286,14 +406,18 @@ public class Consensionaria {
 
     }
 
-    public void pago(){
-
-
-
-
-    }
-
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 }
+
+// ********************************************************************************************************
+
+// ********************************************************************************************************
+
+
+
+
+
+
 
 class Coches {
 
@@ -317,53 +441,79 @@ class Coches {
 
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public int getId() {
         return id;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setId(int id) {
         this.id = id;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public String getModelo() {
         return modelo;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public String getColor() {
         return color;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setColor(String color) {
         this.color = color;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public String getMarca() {
         return marca;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setMarca(String marca) {
         this.marca = marca;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public double getPrecio() {
         return precio;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public static int getContadorCoches() {
         return contadorCoches;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public static void setContadorCoches(int contadorCoches) {
         Coches.contadorCoches = contadorCoches;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     @Override
     public String toString() {
@@ -375,6 +525,14 @@ class Coches {
                 ", precio=" + precio;
     }
 }
+
+
+// ********************************************************************************************************
+
+// ********************************************************************************************************
+
+
+
 
 
 
@@ -413,11 +571,13 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
 
 
 
-
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public String getMotor() {
         return motor;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setMotor(String motor) {
 
@@ -435,17 +595,27 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
         }
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public double getPrecioMotor() {
         return precioMotor;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setPrecioMotor(double precioMotor) {
         this.precioMotor = precioMotor;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public String getVentanas() {
         return ventanas;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    // set PARA CAMBIAR LAS VERNTANAS
 
     public void setVentanas(String ventanas) {
         for (String Llave: piezasPrecios.keySet()) {
@@ -460,6 +630,8 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
         }
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public void setLlantas(String llantas) {
         for (String Llave: piezasPrecios.keySet()) {
 
@@ -473,19 +645,28 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
         }
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public double getPrecioVentanas() {
         return precioVentanas;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public void setPrecioVentanas(double precioVentanas) {
         this.precioVentanas = precioVentanas;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public String getLlantas() {
         return Llantas;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+
+    // SET PARA CAMBIAR PIEZAS, YA NO ES NECESARIO LOS METODOS SET ANTERIORES, ESTE METODO RECOPILA LOS 3 SETS
 
     public void setPiezas(String motor, String ventanas, String llantas) {
 
@@ -520,13 +701,21 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
 
             }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public double getPrecioLlantas() {
         return precioLlantas;
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     public void setPrecioLlantas(double precioLlantas) {
         this.precioLlantas = precioLlantas;
     }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    // DESPUES DE AÑADIR A LA LISTA LOS PRECIOS ESCOGIDOS DE LAS PIEZAS, ESTE METODO SE ENCARGA DE SUMAR LOS PRECIOS
 
     private void precioTotalPiezas() {
 
@@ -542,6 +731,8 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
 
     }
 
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     @Override
     public String toString() {
         return "piezasCoche" +
@@ -551,5 +742,77 @@ public piezasCoche(String motor, double precioMotor, String ventanas, double pre
                 ", precioVentanas='" + precioVentanas + '\n' +
                 ", Llantas='" + Llantas + '\n' +
                 ", precioLlantas='" + precioLlantas + '\n';
+    }
+}
+
+// ********************************************************************************************************
+
+// ********************************************************************************************************
+
+
+
+
+
+class Cliente {
+
+    private String nombre;
+    private int telefono;
+    private String email;
+
+
+    public Cliente(String nombre, int telefono, String email) {
+
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.email = email;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public String getEmail() {
+        return email;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    @Override
+    public String toString() {
+        return "cliente" +
+                "nombre='" + nombre + '\n' +
+                ", telefono=" + telefono + '\n' +
+                ", email='" + email + '\n';
     }
 }

@@ -24,10 +24,12 @@ public class ObjetoConcensionaria {
 
             // tienda.mostrarCatalogo();
             tienda.escogerPiezas();
-            
 
+        }
 
+        else if (opcionMenu == 2) {
 
+            tienda.registroCliente();
 
         }
 
